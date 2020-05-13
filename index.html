@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid+FlexBox Exercise</title>
+    <script>
+        function togglemenu() {
+            document.getElementById("navBar").classList.toggle("active");
+
+        }
+
+        function toggllines() {
+            document.getElementById("toggler").classList.toggle("animation");
+
+
+        }
+
+    </script>
+
+</head>
+<header>
+    <div class="toggler" id="toggler" onclick="togglemenu(),toggllines() ">
+        <div class="lines" id="line1" onclick="toggllines()"></div>
+        <div class="lines" id="line2"></div>
+        <div class="lines" id="line3"></div>
+
+    </div>
+    <nav id="navBar">
+
+        <ul>
+            <li>About</li>
+            <li>Products</li>
+            <li>Our Team</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <section class="box">
+        <div class="content">
+            <h1>We Create Inovation</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat fugiat dolorum mollitia unde recusandae
+                perspiciatis quisquam tempore cum sed. Animi veritatis adipisci consectetur saepe nihil, quod totam nisi in
+                dolorem!</p>
+            <button>Read More</button>
+        </div>
+        <img src="/images/undraw_ideation_2a64.svg" alt="image">
+
+    </section>
+
+    <section class="grid_wrapper">
+        <div>
+            <img src="/images/animals.png">
+        </div>
+        <div><img src="/images/animals.png"></div>
+        <div><img src="/images/animals.png"></div>
+        <div><img src="/images/camera.png"></div>
+        <div><img src="/images/camera.png"></div>
+        <div><img src="/images/camera.png"></div>
+        <div><img src="/images/delivery-truck.png"></div>
+        <div><img src="/images/delivery-truck.png"></div>
+        <div><img src="/images/delivery-truck.png"></div>
+        <div><img src="/images/earth.png"></div>
+        <div><img src="/images/earth.png"></div>
+        <div><img src="/images/earth.png"></div>
+        <div><img src="/images/graphics-editor.png"></div>
+        <div><img src="/images/graphics-editor.png"></div>
+        <div><img src="/images/graphics-editor.png"></div>
+
+    </section>
+
+    <footer>
+        <p>Made By Klajdi Ajdini</p>
+    </footer>
+</body>
+
+</html>

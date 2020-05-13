@@ -1,0 +1,269 @@
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #fff;
+
+
+}
+
+ul {
+  display: flex;
+  position: relative;
+
+}
+
+
+ul li:nth-child(4) {
+  margin-left: auto;
+}
+
+li {
+  list-style: none;
+  margin: 1rem;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 1rem;
+}
+
+/* HEader */
+
+.box {
+  height: 70vh;
+  width: 100vw;
+  background-color: #eeeeeebd;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 3em;
+  align-items: center;
+
+}
+
+.box img {
+  max-width: 35em;
+  align-self: center;
+
+
+
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #000000;
+  font-weight: bolder;
+  margin: .6em 0em;
+}
+
+.content p {
+  font-size: 1.5rem;
+  max-width: 55ch;
+  color: rgba(0, 0, 0, 0.534);
+  letter-spacing: 1px
+}
+
+.content button {
+  background: #000;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  margin-top: 1.8em;
+  border: none;
+}
+
+.grid_wrapper {
+  background-color: #eeeeeebd;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  place-items: center;
+  gap: 2em;
+  padding: 2em 0;
+
+}
+
+.grid_wrapper div {
+  background-color: #fff;
+  height: 300px;
+  width: 200px;
+  border: 1px solid rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.479);
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+.grid_wrapper div:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.grid_wrapper img {
+  height: 4em;
+}
+
+footer {
+  background-color: #7bba59;
+  text-align: center;
+  padding: .5em;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+.toggler {
+  display: none;
+}
+
+.active {
+  left: 0;
+  transition: .5s ease-out;
+}
+
+.animation {
+  animation: ani .4s ease;
+}
+
+@keyframes ani {
+  from {
+    transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: rotate(160deg);
+
+  }
+}
+
+
+@media only screen and (max-width: 1303px) {
+
+  .box {
+    padding-top: 5em;
+  }
+
+  .grid_wrapper {
+    padding-top: 7em;
+  }
+
+  .content h1 {
+    font-size: 3.5rem;
+    margin: .6em 0em;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  nav {
+    width: 51vw;
+    height: 100vh;
+    left: -52.5%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+  }
+
+  nav ul {
+    text-align: center;
+    flex-direction: column;
+
+
+  }
+
+  ul li {
+    padding: 1em;
+    font-size: 1.4rem;
+  }
+
+  ul li:nth-child(4) {
+    margin-left: .7em;
+  }
+
+  .toggler {
+    display: block;
+    position: absolute;
+    top: 4%;
+    /* left: 37%; */
+    left: 7%;
+    z-index: 3;
+    background: #000;
+    padding: 1em;
+
+
+  }
+
+
+  .lines {
+    height: 4px;
+    width: 37px;
+    margin: 3px;
+    background-color: #fff;
+
+  }
+
+  .lines:nth-child(3) {
+    width: 20px;
+    margin-left: auto;
+
+  }
+
+  .grid_wrapper {
+    padding-top: 12em;
+
+  }
+
+  /* landing page mobile */
+  .box {
+    padding: 13em 2em 2em 2em;
+
+  }
+
+  .box img {
+    max-width: 20em;
+    position: absolute;
+    z-index: -1;
+
+
+  }
+
+  /* content inside the landing page  mobile*/
+
+  .content h1 {
+    font-size: 3rem;
+    margin: 2em 0em .5em 0em;
+  }
+
+  .content p {
+    letter-spacing: 1.5px;
+  }
+
+  .content button {
+    font-size: 1em;
+    margin-top: 1.3em;
+  }
+
+
+
+
+}
